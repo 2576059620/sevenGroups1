@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<link rel="stylesheet" href="css/top.css">
+	<script type="text/javascript" src = "js/jquery-3.1.1.min.js"></script>
+	<title>首页</title>
+</head>
+<body>
+	<div>
+		<header>
+			<div id="top">
+				<img src="images/nav_logo_03.png" >
+			</div>
+		</header>
+		<section></section>
+		<div class="foot">
+			<a class="foot_div foot_div1" href="#"><img src="images/首页.png">
+			<p>首页</p>
+			</a>
+			<a class="foot_div"  href="#"><img src="images/分类.png">
+			<p>分类</p>
+			</a>
+			<a class="foot_div"  href="#"><img src="images/喇叭.png">
+			<p>热卖</p>
+			</a>
+			<a class="foot_div"  href="#"><img src="images/购物袋.png">
+			<p>购物袋</p>
+			</a>
+			<a class="foot_div"  href="#"><img src="images/用户.png">
+			<p>用户</p>
+			</a>
+		</div>
+	</div>
+	<script>
+		$.ajax({
+			url:"data/reseonly.php",
+			data:""
+		})
+	</script>
+</body>
+</html>
