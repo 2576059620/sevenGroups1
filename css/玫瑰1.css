@@ -1,0 +1,142 @@
+*{
+	margin:0;
+	padding: 0;
+	-webkit-tap-highlight-color:transparent;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+
+}
+body{
+	font-size: 14px;
+	font-family: "黑体";s
+	color: #333;
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+input{
+	border: none;
+	outline: none;
+	-webkit-appearance:none;
+}
+ul,ol{
+	list-style: none;
+}
+header{
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+#top{
+	position: fixed;
+	top: 0%;
+	height: 7%;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	background-color: rgba(60,60,60,0.9);
+	
+	min-width: 320px;
+	max-width: 640px;
+}
+#top>img{
+	width: 30%;
+	height: 60%;
+	color: white;
+	margin:0 auto;
+}
+.swiper-slide>img{
+	width: 100%;
+	height: 80%;
+}
+.section_text1{
+	color: rgb(65,65,65);
+	font-size: 1.1rem;
+	text-align: center;
+}
+.section_text2{
+	margin:20px auto;
+	height: 40px;
+	width: 80%;
+	display: flex;
+}
+.section_text2>div{
+	margin-left:15px;
+	border: 0.5px solid rgb(185,185,185);
+}
+.section_text2>p{
+	color: rgb(65,65,65);
+	font-size: 1.1rem;
+}
+
+footer{
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+.foot{
+	position: fixed;
+	top: 93%;
+	height: 7%;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	background-color: rgba(60,60,60,1);
+	min-width: 320px;
+	max-width: 640px;
+}
+.foot>.foot_div{
+	width: 20%;
+	margin:0 auto;
+}
+.foot>.foot_div1{
+	margin-left:10%;
+}
+.foot>.foot_div>img{
+	width: 30%;
+	height: 30%;
+	margin: 0 auto;
+}
+.foot>.foot_div>p{
+	color: white;
+	font-size: 0.5rem;
+	margin:0 auto;
+}
+.foot>.foot_cen{
+	width: 33.33333333%;
+	margin:0 auto;
+	height: 100%;
+}
+.foot>.foot_cen>img{
+	width: 20%;
+	height: 40%;
+	margin-top: 10%;
+	margin-left:25%;
+}
+.foot>.foot_t{
+
+	border-right:1px solid white; 
+}
+.foot>.foot_cen>span{
+	color: white;
+	font-size: 1rem;
+}
+.foot>.foot_cen>p{
+	color: white;
+	font-size: 1rem;
+	margin:13% 18%;
+}
+.foot>.foot_t1{
+	background-color: rgb(199,31,44);
+}
