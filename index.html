@@ -4,17 +4,63 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 	<link rel="stylesheet" href="css/top.css">
-	<script type="text/javascript" src = "js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src = "js/jquery-3.1.1.min.js">
+	</script><script src="js/index.js"></script>
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 	<title>首页</title>
+	<style>
+		.swiper-pagination-bullet{
+			background-color: gray;
+			width: 50px;
+			height: 1px;
+			border: 1px solid white;
+			border-radius: 0;
+			opacity: .6;
+		}
+		.swiper-pagination-bullet-active{
+			/*background-color: white;*/
+			opacity: 1;
+		}
+	</style>
 </head>
 <body>
-	<div>
+	<div style="padding-top: 80px;">
 		<header>
 			<div id="top">
 				<img src="images/nav_logo_03.png" >
 			</div>
 		</header>
-		<section></section>
+		<section>
+			<div class="jd_banner swiper-container">
+					<ul class="image_box swiper-wrapper">
+						<li  class="swiper-slide">
+							<a href=""><img src="" id="classics"></a>
+						</li>
+						<li  class="swiper-slide">
+							<a href=""><img src="" id="lifetime"></a>
+						</li>
+						<li  class="swiper-slide">
+							<a href=""><img src="" id="classic"></a>
+						</li>
+						<li  class="swiper-slide">
+							<a href=""><img src="" id="constellation"></a>
+						</li>
+						<li  class="swiper-slide">
+							<a href=""><img src="" id="music"></a>
+						</li>
+					</ul>
+					<div class="swiper-pagination"></div>
+				</div>
+		</section>
+		<section>
+			<div>
+				<img src="images/30.jpg" alt="">
+			</div>
+		</section>
 		<div class="foot">
 			<a class="foot_div foot_div1" href="#"><img src="images/首页.png">
 			<p>首页</p>
@@ -34,10 +80,17 @@
 		</div>
 	</div>
 	<script>
-		$.ajax({
-			url:"data/reseonly.php",
-			data:""
-		})
+		var swiper = new Swiper('.swiper-container', {
+		    loop:true,
+		    autoplay:4000,
+		    pagination: '.swiper-pagination',
+		    paginationClickable: true,
+		    nextButton: '.swiper-button-next',
+        	prevButton: '.swiper-button-prev',
+        	// spaceBetween: 30,
+        	centeredSlides: true,
+        	autoplayDisableOnInteraction: false
+		});
 	</script>
 </body>
 </html>

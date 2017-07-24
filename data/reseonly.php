@@ -6,27 +6,27 @@
     "status": "1",
     "datas": [
         {
-            "path": "upload/indexpic/14658135593752293.jpg",
+            "path": "http://www.roseonly.com.cn/upload/indexpic/14658135593752293.jpg",
             "sort": 1,
             "url": "http://www.roseonly.com.cn/list/xianhuameigui.html"
         },
         {
-            "path": "upload/indexpic/14924247528765153.jpg",
+            "path": "http://www.roseonly.com.cn/upload/indexpic/14924247528765153.jpg",
             "sort": 2,
             "url": "http://www.roseonly.com.cn/list/ysquanshiai.html"
         },
         {
-            "path": "upload/indexpic/14373627374249540.jpg",
+            "path": "http://www.roseonly.com.cn/upload/indexpic/14373627374249540.jpg",
             "sort": 3,
             "url": "http://www.roseonly.com.cn/list/meiguizhubao.html"
         },
         {
-            "path": "upload/indexpic/14980966505496025.jpg",
+            "path": "http://www.roseonly.com.cn/upload/indexpic/14980966505496025.jpg",
             "sort": 4,
             "url": "http://www.roseonly.com.cn/list/xingzuo.html"
         },
         {
-            "path": "upload/indexpic/14869728064086373.jpg",
+            "path": "http://www.roseonly.com.cn/upload/indexpic/14869728064086373.jpg",
             "sort": 5,
             "url": "http://www.roseonly.com.cn/list/yinyuemeigui.html"
         }
