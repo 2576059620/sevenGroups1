@@ -244,7 +244,7 @@
             		"img":"http://www.roseonly.com.cn/upload/syspic_new/14942267508632013.png",
 					"name":"玫瑰圆盒",
 					"id":20
-            	},	"img":"http://www.roseonly.com.cn/upload/syspic_new/14951809992681068.png",
+            	},{	"img":"http://www.roseonly.com.cn/upload/syspic_new/14951809992681068.png",
 					"name":"玫瑰方盒",
 					"id":20
             	},{
@@ -275,7 +275,7 @@
             		"img":"http://www.roseonly.com.cn/upload/syspic_new/14942267649481948.png",
 					"name":"耳饰",
 					"id":17
-            	},	"img":"http://www.roseonly.com.cn/upload/syspic_new/14942267671953955.png",
+            	},{	"img":"http://www.roseonly.com.cn/upload/syspic_new/14942267671953955.png",
 					"name":"戒指",
 					"id":17
             	},{
@@ -301,7 +301,7 @@
             		"img":"http://www.roseonly.com.cn/upload/syspic_new/14942267742611593.png",
 					"name":"耳饰",
 					"id":41
-            	},	"img":"http://www.roseonly.com.cn/upload/syspic_new/14942267772866849.png",
+            	},{	"img":"http://www.roseonly.com.cn/upload/syspic_new/14942267772866849.png",
 					"name":"手镯",
 					"id":41
             	}
