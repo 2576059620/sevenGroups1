@@ -16,3 +16,74 @@ div>.button{
 	border: none;
 	background-color: transparent;
 }
+section{
+	margin-top: 80px;
+} 
+.flower_rose{
+	font-size: 15px;
+	font-weight: bold;
+	width: 100%;
+	margin-top: 5%;
+	color: rgb(65,65,65);
+}
+.flower_rose *{
+	display: inline-block;
+}
+.flower_rose>span{
+	width: 47%;
+	padding-left: 4%;
+}
+.flower_rose>a{
+	width: 47%;
+	text-align: right;
+}
+.flower{
+	text-align: center;
+}
+.flower a{
+	display: inline-block;
+	width: 30%;
+	font-size: 13.5px;
+}
+.flower img{
+	width: 75%;
+	margin-top: 20%;
+}
+.flower span{
+	display: inline-block;
+	padding-top: 10%;
+}
+hr{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 4%;
+	border: 1px solid rgb(219,219,219);
+}
+.pearl a{
+	display: inline-block;
+	width: 28%;
+	font-size: 13.5px;
+}
+.pearl img{
+	width: 75%;
+	margin-top: 20%;
+}
+.pearl span{
+	display: inline-block;
+	padding-top: 10%;
+	margin-right: 4%;
+}
+.left{
+	text-align: center;
+}
+.left1{
+	width: 100%;
+	margin-left: 6.5%;
+}
+.left1>a{
+	text-align: center;
+}
+.left1 span{
+	width: 100%;
+	text-align: center;
+}
