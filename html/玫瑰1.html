@@ -20,43 +20,56 @@
 	<section class="swiper-container">
 		<div class="swiper-wrapper">
 			<a class="swiper-slide" href="#">
-			<img src="../images/m1.png">
+			<img src="../images/m1.png" id="img1">
 			</a>
-			<a class="swiper-slide"  href="#"> 
-			<img src="../images/m2.png">
+			<a class="swiper-slide"  href="#" > 
+			<img src="../images/m2.png" id="img2">
 			</a>
-			<a class="swiper-slide"  href="#">
-			<img src="../images/m3.png">
+			<a class="swiper-slide"  href="#" >
+			<img src="../images/m3.png" id="img3">
 			</a>
-			<a class="swiper-slide"  href="#">
-			<img src="../images/m4.png">
+			<a class="swiper-slide"  href="#" >
+			<img src="../images/m4.png" id="img4">
 			</a>
 		</div>
-		<div class="section_text1">经典永续经典限量特别款19支红粉80cm </div>
+		<div class="section_text1" id="text1">经典永续经典限量特别款19支红粉80cm </div>
 		<br>
-		<div class="section_text1">价格：1999</div>
+		<div class="section_text1" id="text2">价格：1999</div>
 		<div class="section_text2">
 			
 				<p>颜色:</p>
 		
 			<div href="">
-				<img src="../images/mi1.png" alt="">
+				<img src="../images/mi1.png" id="img5">
 			</div>
 			<div href="">
-				<img src="../images/mi2.png" alt="">
+				<img src="../images/mi2.png" id="img6">
 			</div>
 			<div href="">
-				<img src="../images/mi3.png" alt="">
+				<img src="../images/mi3.png" id="img7">
 			</div>
 			<div href="">
-				<img src="../images/mi4.png" alt="">
+				<img src="../images/mi4.png" id="img8">
 			</div>
 		</div>
 		<br><br><br><br>
 		<div class="section_text1">
 			服务承诺 官方正品 免邮配送 同城速递
 		</div>
+		<div class="section_text3">
+			<div>
+				<b>适用场景:<b>表白 求婚<br>
+				<b>适用对像:</b>爱人<br>
+				<b>适用节日:</b>情人节 520
+			</div>
+			<div>
+				<b>鲜花朵数:<b>19<br>
+				<b>颜色分类:</b>朱砂<br>
+				<b>产品规格:</b>81cm*21cm*13cm
+			</div>
+		</div>
 	</section>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
 	<footer>
 		<div class="foot">
 			<!-- <a class="foot_div foot_div1" href="#"><img src="../images/首页.png">
@@ -104,11 +117,17 @@
         	autoplayDisableOnInteraction: false
 		});
     	$.ajax({
-    		url:"../PHP/reseonly.php?type=proDetail&proId=12",
+    		url:"../data/reseonly.php?type=proDetail&proId=12",
     		success:function (data) {
     			console.log(data);
     			var obj =JSON.parse(data);
     			console.log(obj);
+    			$("#img1").attr("src","http://www.roseonly.com.cn/"+obj.templateProductList[0].imgpath2);
+    			$("#img2").attr("src","http://www.roseonly.com.cn/"+obj.templateProductList[1].imgpath2);
+    			$("#img3").attr("src","http://www.roseonly.com.cn/"+obj.templateProductList[2].imgpath2);
+    			$("#img4").attr("src","http://www.roseonly.com.cn/"+obj.templateProductList[3].imgpath2);
+    			$("#text1").text(obj.proname4Show);
+
     		}
     	})
     </script>
