@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<script src="../js/jquery-3.1.1.min.js"></script>
-	<!-- <script src="../js/messages_zh.min.js"></script> -->
-	<!-- <script src="../jsjquery.validate.min.js"></script> -->
+	<script src="../js/messages_zh.min.js"></script>
+	<script src="../jsjquery.validate.min.js"></script>
 	<link rel="stylesheet" href="../css/Register.css">
 </head>
 <body>
@@ -127,23 +127,23 @@
 		// 	$('select').css("display","inline-block");
 		// }
 		// var rand1 = 0;
-	// var useRand = 0;
-	// images = new Array;
-	// images[1] = new Image();
-	// images[1].src = "../images/验证码图片.jpg";
-	// images[2] = new Image();
-	// images[2].src = "../images/验证码图片a.jpg";
-	// images[3] = new Image();
-	// images[3].src = "../images/验证码图片b.jpg";
-	// function swapPic() {
-	// var imgnum = images.length - 1;
-	// do {
-	// var randnum = Math.random();
-	// rand1 = Math.round((imgnum - 1) * randnum) + 1;
-	// } while (rand1 == useRand);
-	// useRand = rand1;
-	// document.randimg.src = images[useRand].src;
-	// }
+	var useRand = 0;
+	images = new Array;
+	images[1] = new Image();
+	images[1].src = "../images/验证码图片.jpg";
+	images[2] = new Image();
+	images[2].src = "../images/验证码图片a.jpg";
+	images[3] = new Image();
+	images[3].src = "../images/验证码图片b.jpg";
+	function swapPic() {
+	var imgnum = images.length - 1;
+	do {
+	var randnum = Math.random();
+	rand1 = Math.round((imgnum - 1) * randnum) + 1;
+	} while (rand1 == useRand);
+	useRand = rand1;
+	document.randimg.src = images[useRand].src;
+	}
 	</script>	
 </body>
 </html>
