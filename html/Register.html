@@ -79,7 +79,7 @@
 			            	<div>
 			            		<input type="password" class="username" placeholder="6-16位数字/字母密码" name="password" maxlength="16" required="">
 			            	 	<span id="eys" class="eys" data-flag="0">
-			            	 		<img src="../images/eye.jpg" alt="密码眼睛">
+			            	 		<img src="../images/eye.jpg" alt="密码眼睛" class="eys_transform">
 			            	 	</span>
 			            	</div>            	
 					</li>
@@ -123,17 +123,16 @@
 	</footer>
 
 	<script>
-
-	// 下拉框
-	// function demo(){     
-	// 	test1.focus();     
-	// 	var WshShell = new ActiveXObject("Wscript.Shell");     
-	// 	try {         
-	// 	WshShell.SendKeys("%{DOWN}");     
-	// 	} catch(e){}              
-	// 	WshShell.Quit; 
-	// }
-	// 
+		var isPwd = true;
+		$(".eys_transform").click(function(){
+			if (isPwd) {
+				$('.username').attr("type","text");
+			}else{
+				$('.username').attr("type","password");
+			}
+			isPwd = !isPwd;
+		})
+		
  </script>	
 </body>
 </html>
