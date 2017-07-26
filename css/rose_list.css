@@ -39,7 +39,7 @@ header{
 #top{
 	position: fixed;
 	top: 0%;
-	height: 7%;
+	height: 8%;
 	width: 100%;
 	z-index: 1000;
 	display: flex;
