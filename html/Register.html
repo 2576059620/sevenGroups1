@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<script src="../js/jquery-3.1.1.min.js"></script>
-	<script src="../js/messages_zh.min.js"></script>
-	<script src="../jsjquery.validate.min.js"></script>
+	<!-- <script src="../js/messages_zh.min.js"></script> -->
+	<!-- <script src="../jsjquery.validate.min.js"></script> -->
 	<link rel="stylesheet" href="../css/Register.css">
 </head>
 <body>
@@ -42,7 +42,7 @@
 									<option value="852">中国台湾</option>
 								</select>
 							</div>
-								<img src="../images/下尖号.png" alt="下尖号" onclick="down()">
+								<img src="../images/下尖号.png" alt="下尖号" id="png"  onclick="demo()">
 					</li>
 					<li>
 						<div>
@@ -127,23 +127,46 @@
 		// 	$('select').css("display","inline-block");
 		// }
 		// var rand1 = 0;
-	var useRand = 0;
-	images = new Array;
-	images[1] = new Image();
-	images[1].src = "../images/验证码图片.jpg";
-	images[2] = new Image();
-	images[2].src = "../images/验证码图片a.jpg";
-	images[3] = new Image();
-	images[3].src = "../images/验证码图片b.jpg";
-	function swapPic() {
-	var imgnum = images.length - 1;
-	do {
-	var randnum = Math.random();
-	rand1 = Math.round((imgnum - 1) * randnum) + 1;
-	} while (rand1 == useRand);
-	useRand = rand1;
-	document.randimg.src = images[useRand].src;
-	}
-	</script>	
+		// 图片随机
+	// var useRand = 0;
+	// images = new Array;
+	// images[1] = new Image();
+	// images[1].src = "../images/验证码图片.jpg";
+	// images[2] = new Image();
+	// images[2].src = "../images/验证码图片a.jpg";
+	// images[3] = new Image();
+	// images[3].src = "../images/验证码图片b.jpg";
+	// function swapPic() {
+	// var imgnum = images.length - 1;
+	// do {
+	// var randnum = Math.random();
+	// rand1 = Math.round((imgnum - 1) * randnum) + 1;
+	// } while (rand1 == useRand);
+	// useRand = rand1;
+	// document.randimg.src = images[useRand].src;
+	// }
+	// 下拉框
+	// function demo(){     
+	// 	test1.focus();     
+	// 	var WshShell = new ActiveXObject("Wscript.Shell");     
+	// 	try {         
+	// 	WshShell.SendKeys("%{DOWN}");     
+	// 	} catch(e){}              
+	// 	WshShell.Quit; 
+	// }
+	// 
+	var img = ducument.getElementById("twelve");
+var div = ducument.getElementById("png");
+img.onclick = function(){
+if(div.style.display=="block")
+{
+twelve.style.display='none';
+}
+else
+{
+twelve.style.display='block';
+}
+}
+ </script>	
 </body>
 </html>
