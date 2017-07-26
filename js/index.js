@@ -4,10 +4,72 @@ $.ajax({
 		// console.log(data);
 		var obj = JSON.parse(data);
 		console.log(obj);
-		$("#classics").attr("src",+obj.datas[0].path);
-		$("#lifetime").attr("src",+obj.datas[1].path);
-		$("#classic").attr("src",+obj.datas[2].path);
-		$("#constellation").attr("src",+obj.datas[3].path);
+		$("#classics").attr("src",obj.datas[0].path);
+		$("#lifetime").attr("src",obj.datas[1].path);
+		$("#classic").attr("src",obj.datas[2].path);
+		$("#constellation").attr("src",obj.datas[3].path);
 		$("#music").attr("src",obj.datas[4].path);
+	}
+});
+$.ajax({
+	url:"data/reseonly.php?type=home_list",
+	success:function (data) {
+		// console.log(data);
+		var obj = JSON.parse(data);
+		console.log(obj);
+		$(".top_list_img1").attr("src",obj.imgData[0].imgpath);
+		$(".top_list_img2").attr("src",obj.imgData[1].imgpath);
+		$(".top_list_img3").attr("src",obj.imgData[2].imgpath);
+		$(".top_list_img4").attr("src",obj.imgData[3].imgpath);
+		$(".top_list_img5").attr("src",obj.imgData[4].imgpath);
+		$(".top_list_img6").attr("src",obj.imgData[5].imgpath);
+		$(".top_list_img7").attr("src",obj.imgData[6].imgpath);
+		$(".top_list_img8").attr("src",obj.imgData[7].imgpath);
+		$(".top_list_img9").attr("src",obj.imgData[8].imgpath);
+		$(".top_list_img10").attr("src",obj.imgData[9].imgpath);
+		$(".top_list_img11").attr("src",obj.imgData[10].imgpath);
+		$(".top_list_img12").attr("src",obj.imgData[11].imgpath);
+		$(".top_list_img13").attr("src",obj.imgData[12].imgpath);
+		$(".top_list_img14").attr("src",obj.imgData[13].imgpath);
+		$(".top_list_img15").attr("src",obj.imgData[14].imgpath);
+		$(".top_list_img16").attr("src",obj.imgData[15].imgpath);
+		$(".top_list_img17").attr("src",obj.imgData[16].imgpath);
+		$(".top_list_img18").attr("src",obj.imgData[17].imgpath);
+		$(".top_list_img19").attr("src",obj.imgData[18].imgpath);
+		$(".top_list_img20").attr("src",obj.imgData[19].imgpath);
+		$(".top_list_img21").attr("src",obj.imgData[20].imgpath);
+		$(".top_list_img22").attr("src",obj.imgData[21].imgpath);
+		$(".top_list_img23").attr("src",obj.imgData[22].imgpath);
+		$(".top_list_img24").attr("src",obj.imgData[23].imgpath);
+		$(".top_list_img25").attr("src",obj.imgData[24].imgpath);
+		$(".top_list_img26").attr("src",obj.imgData[25].imgpath);
+		$(".top_list_img27").attr("src",obj.imgData[26].imgpath);
+		$(".top_list_img28").attr("src",obj.imgData[27].imgpath);
+		$(".top_list_img29").attr("src",obj.imgData[28].imgpath);
+		$(".top_list_img30").attr("src",obj.imgData[29].imgpath);
+		$(".top_list_img31").attr("src",obj.imgData[30].imgpath);
+		$(".top_list_img32").attr("src",obj.imgData[31].imgpath);
+		$(".top_list_img33").attr("src",obj.imgData[32].imgpath);
+		$(".top_list_img34").attr("src",obj.imgData[33].imgpath);
+		$(".top_list_img35").attr("src",obj.imgData[34].imgpath);
+		$(".top_list_img36").attr("src",obj.imgData[35].imgpath);
+		$(".top_list_img37").attr("src",obj.imgData[36].imgpath);
+		$(".top_list_img38").attr("src",obj.imgData[37].imgpath);
+		$(".top_list_img39").attr("src",obj.imgData[38].imgpath);
+		$(".top_list_img40").attr("src",obj.imgData[39].imgpath);
+		$(".top_list_img41").attr("src",obj.imgData[40].imgpath);
+		$(".top_list_img42").attr("src",obj.imgData[41].imgpath);
+		$(".top_list_img43").attr("src",obj.imgData[42].imgpath);
+		$(".top_list_img44").attr("src",obj.imgData[43].imgpath);
+		$(".top_list_img45").attr("src",obj.imgData[44].imgpath);
+		$(".top_list_img46").attr("src",obj.imgData[45].imgpath);
+		$(".top_list_img47").attr("src",obj.imgData[46].imgpath);
+		$(".top_list_img48").attr("src",obj.imgData[47].imgpath);
+		$(".top_list_img49").attr("src",obj.imgData[48].imgpath);
+		$(".top_list_img50").attr("src",obj.imgData[49].imgpath);
+		$(".top_list_img51").attr("src",obj.imgData[50].imgpath);
+		$(".top_list_img52").attr("src",obj.imgData[51].imgpath);
+		$(".top_list_img53").attr("src",obj.imgData[52].imgpath);
+		$(".top_list_img54").attr("src",obj.imgData[53].imgpath);
 	}
 })
