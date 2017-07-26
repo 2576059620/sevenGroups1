@@ -82,6 +82,6 @@ section a span{
 	margin: 20px 0px;
 	margin-top: 30px;
 }
-.synthesize{
-	/*display: none;*/
+.synthesize,.sales_volume,.rose_price{
+	display: none;
 }
