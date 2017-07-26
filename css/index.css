@@ -6,7 +6,7 @@
 }
 /*幻灯片*/
 .jd_banner{
-	margin-top: 60px;
+	margin-top: 30px;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
@@ -22,7 +22,7 @@
 }
 .jd_banner>.image_box>li>a>img,.jd_banner>.image_box>li>img{
 	width: 100%;
-	height: 435px;
+	height: 400px;
 	display: block;
 }
 /*第二部分内容*/
@@ -36,4 +36,14 @@
 	width: 49%;
 	display: inline-block;
 	margin: 0;
+}
+/*底部*/
+.foot>.foot_div>p{
+	/*margin-left: 10px;*/
+	text-align: left;
+}
+.foot>.foot_div>img{
+	width: 30%;
+	height: 30%;
+	margin: 0 auto;
 }

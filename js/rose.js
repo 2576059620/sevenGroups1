@@ -25,6 +25,13 @@ $.ajax({
     	$("#img3").attr("src","http://www.roseonly.com.cn/"+obj.rollImageList[2].imgpath);
     	$(".img4").attr("src","http://www.roseonly.com.cn/"+obj.rollImageList[3].imgpath);
     	$("#text1").text(obj.proname4Show);
+    	$("#text2").text(obj.proprice);
+    	$(".scene").text(obj.productParameter.parprovenance);
+    	$(".like").text(obj.productParameter.parqualities);
+    	$(".festival").text(obj.productParameter.parauxiliary);
+    	$(".flower").text(obj.productParameter.parnumber);
+    	$(".colour").text(obj.productParameter.parcolour);
+    	$(".product").text(obj.productParameter.parnorms);
     	$("#img5").attr("src","http://www.roseonly.com.cn/"+obj.imgpath);
     	$("#img6").attr("src","http://www.roseonly.com.cn/"+obj.imgpath2);
     	$("#img7").attr("src","http://www.roseonly.com.cn/"+obj.imgpath);
@@ -36,7 +43,8 @@ $.ajax({
     	$("#img13").attr("src","http://www.roseonly.com.cn/"+obj.detailImageList[4].imgpath);
     	$("#img14").attr("src","http://www.roseonly.com.cn/"+obj.detailImageList[5].imgpath);
     	$("#img15").attr("src","http://www.roseonly.com.cn/"+obj.detailImageList[6].imgpath);
-    	$("#img16").attr("src","http://www.roseonly.com.cn/"+obj.detailImageList[7].imgpath);
-    	$(".imgg1").attr("src","http://www.roseonly.com.cn/"+obj.templateProductList[0].imgpath2);
+    	// $("#img16").attr("src","http://www.roseonly.com.cn/"+obj.detailImageList[7].imgpath);
+    	$(".imgg1").attr("src","http://www.roseonly.com.cn/"+obj.imgpath);
+    	$(".imgg2").attr("src","http://www.roseonly.com.cn/"+obj.imgpath2);
     }
 })
