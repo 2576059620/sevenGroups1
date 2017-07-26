@@ -8,7 +8,7 @@
 }
 body{
 	font-size: 14px;
-	font-family: "黑体";s
+	font-family: "黑体";
 	color: #333;
 	min-width: 320px;
 	max-width: 640px;
@@ -104,7 +104,7 @@ section>div{
 }
 form{
 	width: 100%;
-	height: 220px;
+	height: 133px;
 	background-color: white;
 	margin-top: 20px;
 }
@@ -116,8 +116,6 @@ select{
 	-webkit-appearance: none;
     outline: none;
     padding-left: 20px;
-    	-webkit-tap-highlight-color:transparent;
-
 }
 ul>li{
   	height: 44px;
@@ -140,26 +138,6 @@ form>ul>li>img{
 .username{
 	margin-left: 30px;
 }
-.username_text{
-	margin-left: 30px;
-}
-form>ul>li>div>.s_code{
-	   
-    height: 34px;
-    background: #e1e1e1;
-    color: #414141;
-    margin-top: 5px;
-    line-height: 34px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
-    margin-left: 40px;
-    font-size: 11px;
-    position: absolute;
-    right: 5%;
-    border-radius: 2px;
-    top: 0px;
-}
 .eys{
     width: 25px;
     height: 30px;
@@ -173,6 +151,8 @@ form>ul>li>div>.s_code{
 }
 .voice{
 	color: rgb(1,121,208);
+	float: right;
+	font-size: 0.8rem;
 }
 .btn{
 	width: 80%;
@@ -189,6 +169,7 @@ form>ul>li>div>.s_code{
 }
 .m_reg_txt{
 	color: rgb(1,121,208);
+	font-size: 0.9rem;
 }
 .m_reg{
 	margin:auto;

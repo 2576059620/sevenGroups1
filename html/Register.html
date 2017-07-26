@@ -42,9 +42,7 @@
 									<option value="852">中国台湾</option>
 								</select>
 							</div>
-								<!-- <span> -->
-									<img src="../images/下尖号.png" alt="下尖号" onclick="down()">
-								<!-- </span> -->
+								<img src="../images/下尖号.png" alt="下尖号" onclick="demo()">
 					</li>
 					<li>
 						<div>
@@ -97,7 +95,7 @@
 					</div>	
 						<div class="m_reg">		
 						    <span >
-						        <a href="http://www.roseonly.com.cn/m/phone/login.html" class="m_reg_txt">
+						        <a href="../html/login-登录.html" class="m_reg_txt">
 						        	已有账号登录
 						        </a>
 						    </span>
@@ -129,6 +127,7 @@
 		// 	$('select').css("display","inline-block");
 		// }
 		// var rand1 = 0;
+		// 图片随机
 	// var useRand = 0;
 	// images = new Array;
 	// images[1] = new Image();
@@ -146,6 +145,28 @@
 	// useRand = rand1;
 	// document.randimg.src = images[useRand].src;
 	// }
-	</script>	
+	// 下拉框
+	// function demo(){     
+	// 	test1.focus();     
+	// 	var WshShell = new ActiveXObject("Wscript.Shell");     
+	// 	try {         
+	// 	WshShell.SendKeys("%{DOWN}");     
+	// 	} catch(e){}              
+	// 	WshShell.Quit; 
+	// }
+	// 
+	var img = ducument.getElementById("img");
+var div = ducument.getElementById("div");
+img.onclick = function(){
+if(div.style.display=="block")
+{
+div.style.display='none';
+}
+else
+{
+div.style.display='block';
+}
+}
+ </script>	
 </body>
 </html>
