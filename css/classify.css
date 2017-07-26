@@ -87,3 +87,12 @@ hr{
 	width: 100%;
 	text-align: center;
 }
+.exclusive_shop{
+	margin: 10px 0px;
+	margin-bottom: 55px;
+}
+.exclusive_shop img{
+	margin-left: 5%;
+	width: 90%;
+	margin-top: 5px;
+}
