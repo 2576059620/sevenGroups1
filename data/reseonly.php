@@ -249,7 +249,7 @@
 					"id":20
             	},{
             		"img":"http://www.roseonly.com.cn/upload/syspic_new/14942267563836524.png",
-					"name":"玫瑰心o形盒",
+					"name":"玫瑰心形盒",
 					"id":20
             	},{
             		"img":"http://www.roseonly.com.cn/upload/syspic_new/14942267581443008.png",

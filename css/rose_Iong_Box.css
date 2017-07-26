@@ -1,0 +1,87 @@
+.button{
+	height: 50px;
+	width: 50px;
+	background-color: transparent;
+	background-image: url(../images/nav_back.png);
+	background-size: 12px 22px;
+	background-position: 14px 15px; 
+	background-repeat: no-repeat;
+	align-content: center; 
+	border: none;
+}
+#top{
+	margin-left: -6%;
+}
+nav{
+	margin-top: 54px;
+	height: 50px;
+	background-color: rgb(248,248,248);
+	font-weight: lighter;
+}
+nav>span{
+	display: inline-block;
+	font-size: 18px;
+	width: 23%;
+	text-align: center;
+	line-height: 50px;
+	color: gray;
+}
+nav>span:first-child{
+	margin-left: 6px;
+}
+nav .price{
+	padding-right: 15px;
+	background-image: url(../images/li_no.png);
+	background-repeat: no-repeat;
+	background-position: 75% 50%;
+	background-size: 15% 40%;
+}
+nav .price1{
+	padding-right: 15px;
+	background-image: url(../images/上尖号.png);
+	background-repeat: no-repeat;
+	background-position: 75% 45%;
+	background-size: 14% 25%;
+}
+nav .price2{
+	padding-right: 15px;
+	background-image: url(../images/下尖号.png);
+	background-repeat: no-repeat;
+	background-position: 75% 60%;
+	background-size: 12% 16%;
+}
+.price4{
+	font-weight: bold;
+	color: black;
+}
+section{
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+section a{
+	width: 47%;
+	display: inline-block;
+}
+section img{
+	width: 100%;
+}
+section a div{
+	margin-top: 5px;
+}
+section a span{
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.bottom{
+	margin: auto;
+	color: rgb(153,153,153);
+	margin: 20px 0px;
+	margin-top: 30px;
+}
+.synthesize,.sales_volume,.rose_price{
+	display: none;
+}
