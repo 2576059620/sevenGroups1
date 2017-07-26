@@ -32,6 +32,7 @@ ul,ol{
 header{
 	position: fixed;
 	top: 0%;
+	z-index: 1000;
 	height: 8%;
 	width: 100%;
 	display: flex;
@@ -94,12 +95,10 @@ footer{
 }
 .foot>.foot_cen>img{
 	width: 20%;
-	height: 40%;
 	margin-top: 10%;
 	margin-left:25%;
 }
 .foot>.foot_t{
-
 	border-right:1px solid white; 
 }
 .foot>.foot_cen>span{
