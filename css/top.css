@@ -32,7 +32,7 @@ ul,ol{
 header{
 	position: fixed;
 	top: 0%;
-	height: 7%;
+	height: 8%;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -59,7 +59,7 @@ footer{
 }
 .foot{
 	position: fixed;
-	top: 93%;
+	bottom: 0%;
 	height: 7%;
 	width: 100%;
 	z-index: 1000;
@@ -77,14 +77,15 @@ footer{
 	margin-left:10%;
 }
 .foot>.foot_div>img{
-	width: 30%;
-	height: 30%;
+	width: 20%;
+	height: 20%;
 	margin: 0 auto;
 }
 .foot>.foot_div>p{
 	color: rgb(94,94,94);
-	font-size: 0.5rem;
+	font-size: 0.7rem;
 	margin:0 auto;
+	text-align: center;
 }
 .foot>.foot_cen{
 	width: 33.33333333%;
