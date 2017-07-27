@@ -334,7 +334,7 @@
 		success:function(data){
 			// console.log(data);
 			var obj = JSON.parse(data);
-			// console.log(obj);
+			console.log(obj);
 			$(".sales_img1").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".sales_text1").text(obj[0].seriesname);
 			$(".sales_size1").text(obj[0].proname4Show);
@@ -370,9 +370,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+orderStr+"&categatoryId="+b+"&pageIndex=2",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".sales_img7").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".sales_text7").text(obj[0].seriesname);
 			$(".sales_size7").text(obj[0].proname4Show);
@@ -408,9 +408,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+orderStr+"&categatoryId="+b+"&pageIndex=3",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".sales_img13").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".sales_text13").text(obj[0].seriesname);
 			$(".sales_size13").text(obj[0].proname4Show);
@@ -446,9 +446,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+orderStr+"&categatoryId="+b+"&pageIndex=4",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".sales_img19").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".sales_text19").text(obj[0].seriesname);
 			$(".sales_size19").text(obj[0].proname4Show);
@@ -484,9 +484,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+orderStr+"&categatoryId="+b+"&pageIndex=5",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".sales_img25").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".sales_text25").text(obj[0].seriesname);
 			$(".sales_size25").text(obj[0].proname4Show);
@@ -522,9 +522,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+orderStr+"&categatoryId="+b+"&pageIndex=6",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".sales_img31").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".sales_text31").text(obj[0].seriesname);
 			$(".sales_size31").text(obj[0].proname4Show);
@@ -603,9 +603,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+litre+"&categatoryId="+b+"&pageIndex=2",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".price_img7").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".price_text7").text(obj[0].seriesname);
 			$(".price_size7").text(obj[0].proname4Show);
@@ -641,9 +641,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+litre+"&categatoryId="+b+"&pageIndex=3",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".price_img13").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".price_text13").text(obj[0].seriesname);
 			$(".price_size13").text(obj[0].proname4Show);
@@ -679,9 +679,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+litre+"&categatoryId="+b+"&pageIndex=4",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".price_img19").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".price_text19").text(obj[0].seriesname);
 			$(".price_size19").text(obj[0].proname4Show);
@@ -758,9 +758,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+drop+"&categatoryId="+b+"&pageIndex=2",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".price_drop_img7").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".price_drop_text7").text(obj[0].seriesname);
 			$(".price_drop_size7").text(obj[0].proname4Show);
@@ -796,9 +796,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+drop+"&categatoryId="+b+"&pageIndex=3",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".price_drop_img13").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".price_drop_text13").text(obj[0].seriesname);
 			$(".price_drop_size13").text(obj[0].proname4Show);
@@ -834,9 +834,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+drop+"&categatoryId="+b+"&pageIndex=4",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".price_drop_img19").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".price_drop_text19").text(obj[0].seriesname);
 			$(".price_drop_size19").text(obj[0].proname4Show);
@@ -913,9 +913,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+drop+"&categatoryId="+b+"&pageIndex=2",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".newest_img7").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".newest_text7").text(obj[0].seriesname);
 			$(".newest_size7").text(obj[0].proname4Show);
@@ -951,9 +951,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+drop+"&categatoryId="+b+"&pageIndex=3",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".newest_img13").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".newest_text13").text(obj[0].seriesname);
 			$(".newest_size13").text(obj[0].proname4Show);
@@ -989,9 +989,9 @@
 	$.ajax({
 		url:"../data/reseonly.php?type=orderBy&order="+drop+"&categatoryId="+b+"&pageIndex=4",
 		success:function(data){
-			console.log(data);
+			// console.log(data);
 			var obj = JSON.parse(data);
-			console.log(obj);
+			// console.log(obj);
 			$(".newest_img19").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".newest_text19").text(obj[0].seriesname);
 			$(".newest_size19").text(obj[0].proname4Show);
