@@ -5,29 +5,34 @@
 		$str = '{
     "status": "1",
     "datas": [
+         {
+            "path": "http://www.roseonly.com.cn/upload/indexpic/15008945803714860.jpg",
+            "sort": 1,
+            "url": "http://www.roseonly.com.cn/m/phone/gaoduandingzhi.html"
+        },
         {
             "path": "http://www.roseonly.com.cn/upload/indexpic/14658135593752293.jpg",
-            "sort": 1,
+            "sort": 2,
             "url": "http://www.roseonly.com.cn/list/xianhuameigui.html"
         },
         {
             "path": "http://www.roseonly.com.cn/upload/indexpic/14924247528765153.jpg",
-            "sort": 2,
+            "sort": 3,
             "url": "http://www.roseonly.com.cn/list/ysquanshiai.html"
         },
         {
             "path": "http://www.roseonly.com.cn/upload/indexpic/14373627374249540.jpg",
-            "sort": 3,
+            "sort": 4,
             "url": "http://www.roseonly.com.cn/list/meiguizhubao.html"
         },
         {
             "path": "http://www.roseonly.com.cn/upload/indexpic/14980966505496025.jpg",
-            "sort": 4,
+            "sort": 5,
             "url": "http://www.roseonly.com.cn/list/xingzuo.html"
         },
         {
             "path": "http://www.roseonly.com.cn/upload/indexpic/14869728064086373.jpg",
-            "sort": 5,
+            "sort": 6,
             "url": "http://www.roseonly.com.cn/list/yinyuemeigui.html"
         }
     ]
@@ -249,7 +254,7 @@
 					"id":20
             	},{
             		"img":"http://www.roseonly.com.cn/upload/syspic_new/14942267563836524.png",
-					"name":"玫瑰心o形盒",
+					"name":"玫瑰心形盒",
 					"id":20
             	},{
             		"img":"http://www.roseonly.com.cn/upload/syspic_new/14942267581443008.png",

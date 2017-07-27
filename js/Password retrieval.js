@@ -1,4 +1,4 @@
-		// 图片随机
+	var rand1 = 0;
 	var useRand = 0;
 	images = new Array;
 	images[1] = new Image();
@@ -15,4 +15,5 @@
 	} while (rand1 == useRand);
 	useRand = rand1;
 	document.randimg.src = images[useRand].src;
-	}
+}
+// html中的图片里千万别漏写了 name="randimg"
