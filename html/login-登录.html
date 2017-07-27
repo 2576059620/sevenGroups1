@@ -8,6 +8,7 @@
 	<!-- <script src="../js/messages_zh.min.js"></script> -->
 	<!-- <script src="../jsjquery.validate.min.js"></script> -->
 	<link rel="stylesheet" href="../css/login-登录.css">
+	<script src="../js/login-登录.js"></script>
 </head>
 <body>
 	<header>
@@ -43,6 +44,20 @@
 									</select>
 								</div>
 									<img src="../images/下尖号.png" alt="下尖号" onclick="down()">
+
+										<option value="86" class="d2">中国</option>
+										<option value="61">澳大利亚</option>
+										<option value="82">韩国</option>
+										<option value="1">加拿大</option>
+										<option value="60">马来西亚</option>
+										<option value="1">美国</option>
+										<option value="81">日本</option>
+										<option value="65">新加坡</option>
+										<option value="44">英国</option>
+										<option value="853">中国澳门</option>
+										<option value="886">中国香港</option>
+										<option value="852">中国台湾</option>
+									
 						</li>
 						<li>
 							<div>
@@ -58,7 +73,7 @@
 				            	<div>
 				            		<input type="password" class="username" placeholder="6-16位数字/字母密码" name="password" maxlength="16" required="">
 				            	 	<span id="eys" class="eys" data-flag="0">
-				            	 		<img src="../images/eye.jpg" alt="密码眼睛">
+				            	 		<img src="../images/eye.jpg" alt="密码眼睛" class="eys_transform">
 				            	 	</span>
 				            	</div>            	
 						</li>
@@ -99,5 +114,16 @@
 				</a>
 			</div>
 		</footer>
+		<script>
+				var isPwd=true;
+				$(".eys_transform").click(function(){
+					if (isPwd) {
+						$(".username").attr("type","text");
+					}else{
+						$(".username").attr("type","password");
+					}
+					isPwd = !isPwd;
+				})
+		</script>
 </body>
 </html>
