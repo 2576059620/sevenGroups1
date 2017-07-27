@@ -1,33 +1,57 @@
 	var price1=true;
 	function price2(){
 		price1=!price1;
-		if (!price1) {
+		if (!price1) {	//.sales_volume,.rose_price,.rose_price_drop,.newest
 			$(".price3").css("font-weight","bold");
 			$(".price3").css("color","black");
 			$(".price3").removeClass("price");
 			$(".price3").removeClass("price2");
 			$(".price3").addClass("price1");
+
+			$(".synthesize").css("display","none");
+			$(".rose_price").css("display","inline-block");
+			$(".rose_price_drop").css("display","none");
+			$(".newest").css("display","none");
+			$(".sales_volume").css("display","none");
 		}else{
 			$(".price3").addClass("price2");
 			$(".price3").removeClass("price1");
+			$(".synthesize").css("display","none");
+			$(".rose_price").css("display","none");
+			$(".rose_price_drop").css("display","inline-block");
+			$(".newest").css("display","none");
+			$(".sales_volume").css("display","none");
 		}
 	}
 	function price5(){
 		$(".price4").css("font-weight","bold");
 		$(".price4").css("color","black");
+
 		$(".synthesize").css("display","inline-block");
-		$(".price_volume").css("display","none");
 		$(".rose_price").css("display","none");
+		$(".rose_price_drop").css("display","none");
+		$(".newest").css("display","none");
+		$(".sales_volume").css("display","none");
 	}
 	function price3(){
 		$(".price5").css("font-weight","bold");
 		$(".price5").css("color","black");
-		$(".price_volume").css("display","inline-block");
+
 		$(".synthesize").css("display","none");
+		$(".rose_price").css("display","none");
+		$(".rose_price_drop").css("display","none");
+		$(".newest").css("display","none");
+		$(".sales_volume").css("display","inline-block");
 	}
 	function price4(){
 		$(".price6").css("font-weight","bold");
 		$(".price6").css("color","black");
+
+		$(".synthesize").css("display","none");
+		$(".rose_price").css("display","none");
+		$(".rose_price_drop").css("display","none");
+		$(".newest").css("display","inline-block");
+		$(".sales_volume").css("display","none");
 	}
 //接收上级界面传递的参数，首先获取当前url信息
 	var url=location.href;
@@ -689,7 +713,7 @@
 			$(".price_price24").text(obj[5].finalprice);
 		}
 	})
-	
+
 // 价格  降序
 	var drop = encodeURIComponent("p.finalprice+desc");
 	//第一页
@@ -842,5 +866,160 @@
 			$(".price_drop_text24").text(obj[5].seriesname);
 			$(".price_drop_size24").text(obj[5].proname4Show);
 			$(".price_drop_price24").text(obj[5].finalprice);
+		}
+	})
+
+// 最新
+	var drop = encodeURIComponent("p.id+desc");
+	//第一页
+	$.ajax({
+		url:"../data/reseonly.php?type=orderBy&order="+drop+"&categatoryId="+b+"&pageIndex=1",
+		success:function(data){
+			// console.log(data);
+			var obj = JSON.parse(data);
+			// console.log(obj);
+			$(".newest_img1").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
+			$(".newest_text1").text(obj[0].seriesname);
+			$(".newest_size1").text(obj[0].proname4Show);
+			$(".newest_price1").text(obj[0].finalprice);
+
+			$(".newest_img2").attr("src","http://www.roseonly.com.cn/"+obj[1].imgpath2);
+			$(".newest_text2").text(obj[1].seriesname);
+			$(".newest_size2").text(obj[1].proname4Show);
+			$(".newest_price2").text(obj[1].finalprice);
+
+			$(".newest_img3").attr("src","http://www.roseonly.com.cn/"+obj[2].imgpath2);
+			$(".newest_text3").text(obj[2].seriesname);
+			$(".newest_size3").text(obj[2].proname4Show);
+			$(".newest_price3").text(obj[2].finalprice);
+
+			$(".newest_img4").attr("src","http://www.roseonly.com.cn/"+obj[3].imgpath2);
+			$(".newest_text4").text(obj[3].seriesname);
+			$(".newest_size4").text(obj[3].proname4Show);
+			$(".newest_price4").text(obj[3].finalprice);
+
+			$(".newest_img5").attr("src","http://www.roseonly.com.cn/"+obj[4].imgpath2);
+			$(".newest_text5").text(obj[4].seriesname);
+			$(".newest_size5").text(obj[4].proname4Show);
+			$(".newest_price5").text(obj[4].finalprice);
+
+			$(".newest_img6").attr("src","http://www.roseonly.com.cn/"+obj[5].imgpath2);
+			$(".newest_text6").text(obj[5].seriesname);
+			$(".newest_size6").text(obj[5].proname4Show);
+			$(".newest_price6").text(obj[5].finalprice);
+		}
+	})
+	//第二页
+	$.ajax({
+		url:"../data/reseonly.php?type=orderBy&order="+drop+"&categatoryId="+b+"&pageIndex=2",
+		success:function(data){
+			console.log(data);
+			var obj = JSON.parse(data);
+			console.log(obj);
+			$(".newest_img7").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
+			$(".newest_text7").text(obj[0].seriesname);
+			$(".newest_size7").text(obj[0].proname4Show);
+			$(".newest_price7").text(obj[0].finalprice);
+
+			$(".newest_img8").attr("src","http://www.roseonly.com.cn/"+obj[1].imgpath2);
+			$(".newest_text8").text(obj[1].seriesname);
+			$(".newest_size8").text(obj[1].proname4Show);
+			$(".newest_price8").text(obj[1].finalprice);
+
+			$(".newest_img9").attr("src","http://www.roseonly.com.cn/"+obj[2].imgpath2);
+			$(".newest_text9").text(obj[2].seriesname);
+			$(".newest_size9").text(obj[2].proname4Show);
+			$(".newest_price9").text(obj[2].finalprice);
+
+			$(".newest_img10").attr("src","http://www.roseonly.com.cn/"+obj[3].imgpath2);
+			$(".newest_text10").text(obj[3].seriesname);
+			$(".newest_size10").text(obj[3].proname4Show);
+			$(".newest_price10").text(obj[3].finalprice);
+
+			$(".newest_img11").attr("src","http://www.roseonly.com.cn/"+obj[4].imgpath2);
+			$(".newest_text11").text(obj[4].seriesname);
+			$(".newest_size11").text(obj[4].proname4Show);
+			$(".newest_price11").text(obj[4].finalprice);
+
+			$(".newest_img12").attr("src","http://www.roseonly.com.cn/"+obj[5].imgpath2);
+			$(".newest_text12").text(obj[5].seriesname);
+			$(".newest_size12").text(obj[5].proname4Show);
+			$(".newest_price12").text(obj[5].finalprice);
+		}
+	})
+	//第三页
+	$.ajax({
+		url:"../data/reseonly.php?type=orderBy&order="+drop+"&categatoryId="+b+"&pageIndex=3",
+		success:function(data){
+			console.log(data);
+			var obj = JSON.parse(data);
+			console.log(obj);
+			$(".newest_img13").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
+			$(".newest_text13").text(obj[0].seriesname);
+			$(".newest_size13").text(obj[0].proname4Show);
+			$(".newest_price13").text(obj[0].finalprice);
+
+			$(".newest_img14").attr("src","http://www.roseonly.com.cn/"+obj[1].imgpath2);
+			$(".newest_text14").text(obj[1].seriesname);
+			$(".newest_size14").text(obj[1].proname4Show);
+			$(".newest_price14").text(obj[1].finalprice);
+
+			$(".newest_img15").attr("src","http://www.roseonly.com.cn/"+obj[2].imgpath2);
+			$(".newest_text15").text(obj[2].seriesname);
+			$(".newest_size15").text(obj[2].proname4Show);
+			$(".newest_price15").text(obj[2].finalprice);
+
+			$(".newest_img16").attr("src","http://www.roseonly.com.cn/"+obj[3].imgpath2);
+			$(".newest_text16").text(obj[3].seriesname);
+			$(".newest_size16").text(obj[3].proname4Show);
+			$(".newest_price16").text(obj[3].finalprice);
+
+			$(".newest_img17").attr("src","http://www.roseonly.com.cn/"+obj[4].imgpath2);
+			$(".newest_text17").text(obj[4].seriesname);
+			$(".newest_size17").text(obj[4].proname4Show);
+			$(".newest_price17").text(obj[4].finalprice);
+
+			$(".newest_img18").attr("src","http://www.roseonly.com.cn/"+obj[5].imgpath2);
+			$(".newest_text18").text(obj[5].seriesname);
+			$(".newest_size18").text(obj[5].proname4Show);
+			$(".newest_price18").text(obj[5].finalprice);
+		}
+	})
+	//第四页
+	$.ajax({
+		url:"../data/reseonly.php?type=orderBy&order="+drop+"&categatoryId="+b+"&pageIndex=4",
+		success:function(data){
+			console.log(data);
+			var obj = JSON.parse(data);
+			console.log(obj);
+			$(".newest_img19").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
+			$(".newest_text19").text(obj[0].seriesname);
+			$(".newest_size19").text(obj[0].proname4Show);
+			$(".newest_price19").text(obj[0].finalprice);
+
+			$(".newest_img20").attr("src","http://www.roseonly.com.cn/"+obj[1].imgpath2);
+			$(".newest_text20").text(obj[1].seriesname);
+			$(".newest_size20").text(obj[1].proname4Show);
+			$(".newest_price20").text(obj[1].finalprice);
+
+			$(".newest_img21").attr("src","http://www.roseonly.com.cn/"+obj[2].imgpath2);
+			$(".newest_text21").text(obj[2].seriesname);
+			$(".newest_size21").text(obj[2].proname4Show);
+			$(".newest_price21").text(obj[2].finalprice);
+
+			$(".newest_img22").attr("src","http://www.roseonly.com.cn/"+obj[3].imgpath2);
+			$(".newest_text22").text(obj[3].seriesname);
+			$(".newest_size22").text(obj[3].proname4Show);
+			$(".newest_price22").text(obj[3].finalprice);
+
+			$(".newest_img23").attr("src","http://www.roseonly.com.cn/"+obj[4].imgpath2);
+			$(".newest_text23").text(obj[4].seriesname);
+			$(".newest_size23").text(obj[4].proname4Show);
+			$(".newest_price23").text(obj[4].finalprice);
+
+			$(".newest_img24").attr("src","http://www.roseonly.com.cn/"+obj[5].imgpath2);
+			$(".newest_text24").text(obj[5].seriesname);
+			$(".newest_size24").text(obj[5].proname4Show);
+			$(".newest_price24").text(obj[5].finalprice);
 		}
 	})
