@@ -49,6 +49,10 @@ section{
 	width: 75%;
 	margin-top: 20%;
 }
+#rose_bear{
+	display: block;
+	margin: auto;
+}
 .flower span{
 	display: inline-block;
 	padding-top: 10%;
@@ -75,6 +79,7 @@ hr{
 }
 .left{
 	text-align: center;
+	margin: auto;
 }
 .left1{
 	width: 100%;
@@ -83,7 +88,7 @@ hr{
 .left1>a{
 	text-align: center;
 }
-.left1 span{
+.left1 span,.left span{
 	width: 100%;
 	text-align: center;
 }

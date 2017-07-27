@@ -67,7 +67,7 @@
 		url:"../data/reseonly.php?type=categatory_list&categatoryId="+b+"&pageIndex=1",
 		success:function(data){
 			var obj = JSON.parse(data);
-			// console.log(obj);
+			console.log(obj);
 			$(".flower_img1").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".flower_text1").text(obj[0].seriesname);
 			$(".flower_size1").text(obj[0].proname4Show);
