@@ -23,7 +23,7 @@ $.ajax({
     	$(".img1").attr("src","http://www.roseonly.com.cn/"+obj.rollImageList[0].imgpath);
     	$("#img2").attr("src","http://www.roseonly.com.cn/"+obj.rollImageList[1].imgpath);
     	$("#img3").attr("src","http://www.roseonly.com.cn/"+obj.rollImageList[2].imgpath);
-    	$(".img4").attr("src","http://www.roseonly.com.cn/"+obj.rollImageList[3].imgpath);
+    	// $(".img4").attr("src","http://www.roseonly.com.cn/"+obj.rollImageList[3].imgpath);
     	$("#text1").text(obj.proname4Show);
     	$("#text2").text(obj.proprice);
     	$(".scene").text(obj.productParameter.parprovenance);
