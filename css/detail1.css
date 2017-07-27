@@ -44,7 +44,6 @@ header{
 	display: flex;
 	align-items: center;
 	background-color: rgba(60,60,60,0.9);
-	
 	min-width: 320px;
 	max-width: 640px;
 }
