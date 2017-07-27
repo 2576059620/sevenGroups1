@@ -4,11 +4,12 @@ $.ajax({
 		// console.log(data);
 		var obj = JSON.parse(data);
 		console.log(obj);
-		$("#classics").attr("src",obj.datas[0].path);
-		$("#lifetime").attr("src",obj.datas[1].path);
-		$("#classic").attr("src",obj.datas[2].path);
-		$("#constellation").attr("src",obj.datas[3].path);
-		$("#music").attr("src",obj.datas[4].path);
+		$("#made").attr("src",obj.datas[0].path);
+		$("#classics").attr("src",obj.datas[1].path);
+		$("#lifetime").attr("src",obj.datas[2].path);
+		$("#classic").attr("src",obj.datas[3].path);
+		$("#constellation").attr("src",obj.datas[4].path);
+		$("#music").attr("src",obj.datas[5].path);
 	}
 });
 $.ajax({
