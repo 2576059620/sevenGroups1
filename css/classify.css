@@ -5,17 +5,6 @@ body{
 	min-width: 320px;
 	margin: 0 auto;
 }
-div>.button{
-	width: 40px;
-	height: 40px;
-	background-image: url(../images/nav_back.png);
-	background-size: 15px 24px;
-	background-position: 14px 10px; 
-	background-repeat: no-repeat;
-	align-content: center; 
-	border: none;
-	background-color: transparent;
-}
 section{
 	margin-top: 80px;
 } 
