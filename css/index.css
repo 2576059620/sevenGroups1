@@ -37,13 +37,3 @@
 	display: inline-block;
 	margin: 0;
 }
-/*底部*/
-.foot>.foot_div>p{
-	/*margin-left: 10px;*/
-	text-align: left;
-}
-.foot>.foot_div>img{
-	width: 30%;
-	height: 30%;
-	margin: 0 auto;
-}
