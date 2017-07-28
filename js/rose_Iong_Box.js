@@ -218,7 +218,7 @@
 		url:"../data/reseonly.php?type=categatory_list&categatoryId="+b+"&pageIndex=5",
 		success:function(data){
 			var obj = JSON.parse(data);
-			// console.log(obj);
+			console.log(obj);
 			$(".flower_img25").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".flower_text25").text(obj[0].seriesname);
 			$(".flower_size25").text(obj[0].proname4Show);
@@ -255,7 +255,7 @@
 		url:"../data/reseonly.php?type=categatory_list&categatoryId="+b+"&pageIndex=6",
 		success:function(data){
 			var obj = JSON.parse(data);
-			// console.log(obj);
+			console.log(obj);
 			$(".flower_img31").attr("src","http://www.roseonly.com.cn/"+obj[0].imgpath2);
 			$(".flower_text31").text(obj[0].seriesname);
 			$(".flower_size31").text(obj[0].proname4Show);
